@@ -1,3 +1,64 @@
-h1 {
-    background-color: cadetblue;
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
+
+body {
+    margin: 0px;
+    pad: 0px;
+    background-color: #C6EBC5;
+    font-family: "Nunito";
+  }
+
+/*  Inicio del Nav */
+.navbar {
+    width: 100%;
+    
 }
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;   
+}
+.navbar ul li a{
+    text-decoration: none;    
+    font-size: 20px;
+}
+.navbar-titulo {
+    width: 20%;
+}
+
+/* Fin del Nav */
+
+/* Body */
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.item {
+    width: 50%;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+}
+/* Fin Body */
+
+/* Inicio cosas responsive */
+
+@media screen and (max-width:576px) {
+   
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+     
+}
+@media screen and (min-width:1201px) and (max-width:1400px) {
+    
+}
+/* Fin cosas responsive */
