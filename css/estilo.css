@@ -1,5 +1,8 @@
+/* font o lo que sea que tenga que poner aca arriba */
 
 @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
+
+/*  fin cosas */
 
 body {
     margin: 0px;
@@ -10,21 +13,34 @@ body {
 
 /*  Inicio del Nav */
 .navbar {
-    width: 100%;
-    
+    background-color: transparent; /* Cambiar el fondo a transparente */
+    padding: 10px;
 }
-.navbar ul {
-    display: flex;
+  
+.nav-list {
     list-style-type: none;
-    justify-content: space-evenly;   
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}  
+.nav-item {
+    margin: 0 10px;
+    padding: 15px;
 }
-.navbar ul li a{
-    text-decoration: none;    
-    font-size: 20px;
+  
+.nav-item a {
+    text-decoration: none;
+    color: #333; 
+    padding: 10px 20px; 
+    border-radius: 15px;  
+    background-color: #A1C398;
+    transition: background-color 0.6s, color 0.3s; 
 }
-.navbar-titulo {
-    width: 20%;
-}
+.nav-item a:hover {
+    background-color: #C6EBC5; /* hover = pasar mouse encima */
+    border: 0;
+} 
 
 /* Fin del Nav */
 
@@ -47,10 +63,25 @@ body {
 /* Inicio cosas responsive */
 
 @media screen and (max-width:576px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
    
 }
 @media screen and (min-width:577px) and (max-width:768px) {
-    
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+    }
 }
 @media screen and (min-width:769px) and (max-width:992px) {
     
