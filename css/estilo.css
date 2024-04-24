@@ -34,6 +34,9 @@
     background-color: #C6EBC5; /* hover = pasar mouse encima */
     border: 0;
 } 
+.navbar-item-drop{
+    margin: 10px;
+}
 .logo {
     border-radius: 60%;
     width:fit-content; /* Ajusta el tamaño */
@@ -174,19 +177,3 @@ body {
     margin-bottom: 20px; /* Espacio entre los párrafos */
 }
 
-/* Estilos para los encabezados */
-h1 {
-    font-size: 48px;
-    font-family: "Rubik Doodle Shadow", system-ui;
-    text-align: center;
-    padding: 40px 0;
-    background-image: linear-gradient(to right, rgb(194, 194, 207), #2ee56b); /* Degradado como fondo */
-    margin-bottom: 10px; /* Espacio entre el encabezado y el siguiente elemento */
-}
-
-h2 {
-    font-size: 35px; /* Tamaño del texto */
-    color:#333; /* Color del texto */
-    margin-top: 20px; /* Espacio entre el encabezado y el párrafo anterior */
-    margin-bottom: 10px; /* Espacio entre el encabezado y el párrafo siguiente */
-}
