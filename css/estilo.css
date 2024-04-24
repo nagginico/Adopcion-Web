@@ -10,14 +10,9 @@
     padding: 10px;
 }
   
-.nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-}  
+ 
 .nav-item {
+    justify-items: center;
     margin: 0 10px;
     padding: 15px;
 }
@@ -55,11 +50,13 @@
 /* Body */
 
 body {
-    margin: 0px;
-    pad: 0px;
+
     background-color: #C6EBC5;
     font-family: "Nunito";
   }
+.titulo {
+    text-align: center;
+}
 .container {
     width: 100%;
     display: flex;
@@ -75,40 +72,6 @@ body {
 }
 
 /* Fin Body */
-
-/* Inicio cosas responsive */
-
-@media screen and (max-width:576px) {
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-item {
-        margin: 10px 0;
-    }
-   
-}
-@media screen and (min-width:577px) and (max-width:768px) {
-    .nav-list {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav-item {
-        flex: 0 0 50%;
-        max-width: 50%;
-        text-align: center;
-    }
-}
-@media screen and (min-width:769px) and (max-width:992px) {
-    
-}
-@media screen and (min-width:993px) and (max-width:1200px) {
-     
-}
-@media screen and (min-width:1201px) and (max-width:1400px) {
-    
-}
-/* Fin cosas responsive */
 
 /* footer */
 
@@ -145,26 +108,17 @@ body {
 }
 
 .carousel-item{
-        height: 90%;
-        width: 80%;
-        margin: 70px 20px 30px 70px;
-    }
+    height: 90%;
+    width: 80%;
+    margin: 70px 20px 30px 70px;
+}
 
-    h2{
-        text-align: center;
-    } */
-    .carousel{
-        background-color: rgb(218, 240, 228);
-        
-    }
-
-    /* Estilos para el contenedor principal */
-    .nosotros img{
-        width: 90%;
-        height: 90%;
-        padding: 40px 0;
-
-    }
+/* Estilos para el contenedor principal */
+.nosotros img{
+    width: 90%;
+    height: 90%;   
+    padding: 40px 0;
+}
 .nosotros {
     max-width: 800px; /* Limita el ancho máximo del contenedor */
     margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -177,3 +131,27 @@ body {
     margin-bottom: 20px; /* Espacio entre los párrafos */
 }
 
+/* Inicio cosas responsive */
+
+@media screen and (max-width:576px) {
+    .nav-item {
+        flex: 0 0 50%;
+        text-align: center;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .nav-item {
+        flex: 0 0 50%;
+        text-align: center;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+     
+}
+@media screen and (min-width:1201px) and (max-width:1400px) {
+    
+}
+/* Fin cosas responsive */
