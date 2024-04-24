@@ -4,13 +4,6 @@
 
 /*  fin cosas */
 
-body {
-    margin: 0px;
-    pad: 0px;
-    background-color: #C6EBC5;
-    font-family: "Nunito";
-  }
-
 /*  Inicio del Nav */
 .navbar {
     background-color: transparent; 
@@ -45,6 +38,13 @@ body {
 /* Fin del Nav */
 
 /* Body */
+
+body {
+    margin: 0px;
+    pad: 0px;
+    background-color: #C6EBC5;
+    font-family: "Nunito";
+  }
 .container {
     width: 100%;
     display: flex;
@@ -58,6 +58,7 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /* Fin Body */
 
 /* Inicio cosas responsive */
