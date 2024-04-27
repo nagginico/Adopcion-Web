@@ -8,18 +8,8 @@
     box-sizing: border-box;
 }
 
-/* font o lo que sea que tenga que poner aca arriba */
-
-@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
-body {
-    background-color: #C6EBC5;
-    font-family: "Nunito";
-}
-
 
 /*  fin cosas */
-
-
 
 /*  Inicio del Nav */
 .navbar {
@@ -56,11 +46,14 @@ body {
     background-color: #A1C398; /* Cambia el color de fondo */
     text-align: center;
 }
-.contenido-nosotros img{
-    margin: 60px 80px 80px 90px;
-    width: 90%;
-    height: 90%; 
-
+.contenido-nosotros img {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #ddd;
+    width: 100%; /* Abarca todo el ancho del contenedor */
+    max-height: 400px; /* Altura máxima deseada */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
 }
 /* Fin del Nav */
 
