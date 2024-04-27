@@ -189,9 +189,12 @@ h1{
   }
   
   .carousel-item img {
-    height:650px;
-    width: 500px;
-    margin: 30px 10px 20px 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #ddd;
+    width: 100%; /* Abarca todo el ancho del contenedor */
+    max-height: 600px; /* Altura máxima deseada */
+    object-fit: hidden; 
   }
 
 /* Estilos para el contenedor principal */
