@@ -412,9 +412,6 @@ margin-bottom: 10px;
 }
 
 @media screen and (max-width: 991px){
-    body{
-        background-color: #4de19c;
-    }
     .contactame{
         padding: 20px;
     }
