@@ -1,8 +1,19 @@
+/*  para quitar fuentes predeterminadas de navegador por default */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* font o lo que sea que tenga que poner aca arriba */
 
 @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
 
+
+
 /*  fin cosas */
+
+
 
 /*  Inicio del Nav */
 .navbar {
@@ -48,6 +59,66 @@
 /* Fin del Nav */
 
 /* Body */
+main {
+         
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+
+/* Estilos para dispositivos móviles (ancho menor a 768px) */
+@media (max-width: 768px) {
+    /* Cambiamos a un diseño de una sola columna */
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para dispositivos de pantalla grande (ancho mayor a 768px) */
+@media (min-width: 769px) and (max-width:990px){
+    /* Mantenemos el diseño de tres columnas */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+}
+
+/* Estilos para los elementos dentro de la cuadrícula */
+.article {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+.article img {
+    max-width: 100%;
+    width: fit-content;
+    height: fit-content;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+p{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+} 
+
+
+}
+h1{
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 10px;
+}
 
 body {
 
