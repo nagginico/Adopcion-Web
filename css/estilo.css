@@ -8,7 +8,10 @@
 /* font o lo que sea que tenga que poner aca arriba */
 
 @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Patua+One&display=swap');
-
+body {
+    background-color: #C6EBC5;
+    font-family: "Nunito";
+}
 
 
 /*  fin cosas */
@@ -62,11 +65,13 @@
 main {
          
     .container {
+        background-color: #C6EBC5;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
         padding: 20px;
     }
+
 
 /* Estilos para dispositivos móviles (ancho menor a 768px) */
 @media (max-width: 768px) {
@@ -90,9 +95,10 @@ main {
 /* Estilos para los elementos dentro de la cuadrícula */
 .article {
     border: 1px solid #ddd;
+    border-radius: 40px ;
     padding: 10px;
     text-align: center;
-    background-color: #ddd;
+    background-color: #A1C398;
 }
 
 .article img {
@@ -119,12 +125,6 @@ h1{
     font-size: 52px;
     margin-bottom: 10px;
 }
-
-body {
-
-    background-color: #C6EBC5;
-    font-family: "Nunito";
-  }
 .titulo {
     text-align: center;
 }
