@@ -46,6 +46,36 @@
     background-color: #A1C398; /* Cambia el color de fondo */
     text-align: center;
 }
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../static/perrito.gato.inicio2.jpg');
+    background-position: bottom;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content p{
+    font-size:medium;
+    color: #000;
+    font-size: 3vmin;
+    background: linear-gradient(135deg, #4de19c 0%, #5ee669 50%, #329f51 100%);
+    border-radius: 10px; /* Ajusta el valor según prefieras */
+
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
 .contenido-nosotros img {
     border: 1px solid #ddd;
     padding: 10px;
