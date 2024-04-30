@@ -39,6 +39,11 @@
 .navbar-item-drop{
     margin: 10px;
 }
+.dropdown-menu {
+    border: 0px;
+    background-color: transparent;
+}
+
 .logo {
     border-radius: 60%;
     width:fit-content; /* Ajusta el tamaño */
