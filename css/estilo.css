@@ -52,12 +52,12 @@
     text-align: center;
 }
 
-header{
+header {
     width: 100vw;
     height: 100vh;
     background-image: url('../static/perrito.gato.inicio2.jpg');
-    background-position: bottom;
-    background-size: 100% 100%;
+    background-position: center;
+    background-size: cover; /* Hace la imagen responsive */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -71,14 +71,14 @@ header{
     font-size:medium;
     color: #000;
     font-size: 3vmin;
-    background: linear-gradient(135deg, #4de19c 0%, #5ee669 50%, #329f51 100%);
+    background: linear-gradient(135deg, #eaf5f0 0%, #5ee669 50%, #329f51 100%);
     border-radius: 10px; /* Ajusta el valor según prefieras */
-
 }
 .header-content h1{
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
+    font-family: "Munito";
 }
 
 .contenido-nosotros img {
@@ -90,6 +90,94 @@ header{
     max-height: 400px; /* Altura máxima deseada */
     object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
 }
+
+.container-videos {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+    display: grid;
+	grid-template-columns: 3fr 1fr;
+    gap: 20px; /* Espacio entre los contenedores de video */
+}
+
+.titulo, h3 {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #A1C398;
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+}
+
+.card .textos {
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+}
+
+.card iframe {
+    width: 100%; /* Aseguramos que los iframes de los videos ocupen todo el ancho del contenedor */
+}
+.banner {
+    padding: 40px 20px; /* Ajustar el padding para evitar que el texto tape la imagen */
+    background: linear-gradient(to top, rgba(46, 54, 59, 0.8), rgba(30,35,38,1)), url(../static/perro.gato.inicio.jpg);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    text-align: left; /* Alineando el texto a la izquierda */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.banner img {
+    max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
+    max-height: 100%; /* Ajustar imagen al alto máximo del contenedor */
+}
+
+.banner ul {
+    list-style: none;
+    text-align: left; /* Centrar el texto horizontalmente */
+    margin: 0;
+}
+
+.banner ul li {
+    margin: 15px 0; /* Ajusta el margen superior e inferior de los elementos de la lista */
+    font-weight: bold;
+}
+
+.banner .boton {
+    background: #06f03184;
+    display: block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Munito', sans-serif;
+    cursor: pointer;
+}
+
 /* Fin del Nav */
 
 /* Body */
@@ -313,7 +401,7 @@ body .contactame{
 .box{
     position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr; /* fracción del espacio disponible en el contenedor. */
     grid-template-rows: 5fr 4fr;
     grid-template-areas: "form info" "form map";
     grid-gap: 20px;
@@ -444,7 +532,18 @@ margin-bottom: 10px;
     height: 100%;
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 768px){
+    .contenedor-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%; /* Hacemos que cada video ocupe todo el ancho disponible */
+        max-width: none; /* Reiniciamos el ancho máximo para que no se aplique */
+    }
+    
     .contactame{
         padding: 20px;
     }
@@ -471,4 +570,27 @@ margin-bottom: 10px;
         min-height: 300px;
         padding: 30px;
     }  
+    
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: 50vh;
+    }
+
+    .header-content {
+        margin-bottom: 50px;
+    }
+
+    .header-content h1 {
+        font-size: 5vmin; 
+        margin-top: 20px; 
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 20px; 
+        background-size: contain; /* Hago que la imagen de fondo se ajuste al contenedor sin distorsión */
+        background-repeat: no-repeat;
+    }
 }
