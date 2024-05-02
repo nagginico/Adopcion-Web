@@ -51,8 +51,15 @@
     background-color: #A1C398; /* Cambia el color de fondo */
     text-align: center;
 }
-
+/* Fin del Nav */
 header {
+    border-radius: 10px; /* Bordes redondeados */
+    background: linear-gradient(135deg, #A1C398, #333); /* Degradado */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.inicio {
     width: 100vw;
     height: 100vh;
     background-image: url('../static/perrito.gato.inicio2.jpg');
@@ -62,19 +69,19 @@ header {
     align-items: flex-end;
     justify-content: center;
 }
-.header-content{
+.inicio-content{
     margin-bottom: 150px;
     color: whitesmoke;
     text-align: center;
 }
-.header-content p{
+.inicio-content p{
     font-size:medium;
     color: #000;
     font-size: 3vmin;
     background: linear-gradient(135deg, #eaf5f0 0%, #5ee669 50%, #329f51 100%);
     border-radius: 10px; /* Ajusta el valor según prefieras */
 }
-.header-content h1{
+.inicio-content h1{
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -177,8 +184,6 @@ header {
     font-family: 'Munito', sans-serif;
     cursor: pointer;
 }
-
-/* Fin del Nav */
 
 /* Body */
 main {
@@ -573,15 +578,15 @@ margin-bottom: 10px;
     
 }
 @media screen and (max-width: 768px) {
-    header {
+    .inicio {
         height: 50vh;
     }
 
-    .header-content {
+    .inicio-content {
         margin-bottom: 50px;
     }
 
-    .header-content h1 {
+    .inicio-content h1 {
         font-size: 5vmin; 
         margin-top: 20px; 
         margin-bottom: 20px;
