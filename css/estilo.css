@@ -56,7 +56,8 @@ header {
     border-radius: 10px; /* Bordes redondeados */
     background: linear-gradient(135deg, #A1C398, #333); /* Degradado */
     color: #fff; /* Color del texto */
-    text-align: center; /* Centrar el texto horizontalmente */
+    margin-bottom: 10px;
+
 }
 
 .inicio {
@@ -142,17 +143,19 @@ header {
     width: 100%; /* Aseguramos que los iframes de los videos ocupen todo el ancho del contenedor */
 }
 .banner {
-    padding: 40px 20px; /* Ajustar el padding para evitar que el texto tape la imagen */
+    padding: 40px 20px; /* Ajustamos el padding para evitar que el texto tape la imagen */
     background: linear-gradient(to top, rgba(46, 54, 59, 0.8), rgba(30,35,38,1)), url(../static/perro.gato.inicio.jpg);
     border-radius: 10px;
     background-size: cover;
     background-position: center center;
-    text-align: left; /* Alineando el texto a la izquierda */
+    text-align: left;
     display: flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center; 
     gap: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .banner img {
