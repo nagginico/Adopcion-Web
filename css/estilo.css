@@ -36,6 +36,11 @@
     background-color: #C6EBC5; /* hover = pasar mouse encima */
     border: 0;
 } 
+.nav-item a:active{
+    background-color: #617e60; /* hover = pasar mouse encima */
+    color: #fff;
+}
+
 .navbar-item-drop{
     margin: 10px;
 }
@@ -157,7 +162,9 @@ header {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
+.banner h3{
+    color: #ddd;
+}
 .banner img {
     max-width: 100%; /* Ajustar imagen al ancho máximo del contenedor */
     max-height: 100%; /* Ajustar imagen al alto máximo del contenedor */
@@ -176,6 +183,7 @@ header {
 
 .banner .boton {
     background: #06f03184;
+    color: #ddd;
     display: block;
     width: 30%;
     font-weight: bold;
@@ -224,7 +232,7 @@ main {
 /* Estilos para los elementos dentro de la cuadrícula */
 .article {
     border: 1px solid #ddd;
-    border-radius: 40px ;
+    border-radius: 40px;
     padding: 10px;
     text-align: center;
     background-color: #A1C398;
@@ -234,6 +242,8 @@ main {
     max-width: 100%;
     width: fit-content;
     height: fit-content;
+    padding: 2%;
+    border-radius: 40px;
 }
 
 .article-item {
@@ -336,7 +346,15 @@ h1{
     border: 2px solid rgb(3, 48, 40);
 }
 
+.icons-redes-sociales a:active {
+    background-color: rgb(6, 126, 66);
+    border: 2px solid rgb(3, 48, 40);
+}
+
 .icons-redes-sociales a:hover i {
+    color: black
+}
+.icons-redes-sociales a:active i {
     color: black
 }
 /* Carrusel */
@@ -570,6 +588,9 @@ margin-bottom: 10px;
 
 
 .contacto-redes-sociales li a:hover{
+    color: #5ee669;
+}
+.contacto-redes-sociales li a:active{
     color: #5ee669;
 }
 .map{
