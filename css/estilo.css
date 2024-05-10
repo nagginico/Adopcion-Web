@@ -52,8 +52,8 @@
   width: fit-content; /* Ajusta el tamaño */
   height: 7em; /* Ajusta el tamaño */
   background-color: #a1c398; /* Cambia el color de fondo */
-  text-align: center;
 }
+
 /* Fin del Nav */
 header {
   border-radius: 10px; /* Bordes redondeados */
@@ -82,7 +82,7 @@ header {
   color: #000;
   font-size: 3vmin;
   background: linear-gradient(135deg, #eaf5f0 0%, #5ee669 50%, #329f51 100%);
-  border-radius: 10px; /* Ajusta el valor según prefieras */
+  border-radius: 10px;
 }
 .inicio-content h1 {
   font-size: 7vmin;
@@ -99,16 +99,6 @@ header {
   width: 100%;
   max-height: 400px; /* Altura máxima deseada */
   object-fit: cover; /* Ajustamos la imagen para cubrir completamente el contenedor */
-}
-
-.container-videos {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 40px 0;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px; /* Espacio entre los contenedores de video */
 }
 
 .titulo,
@@ -344,19 +334,6 @@ h1 {
 }
 .icons-redes-sociales a:active i {
   color: black;
-}
-/* Carrusel */
-.carousel-item {
-  height: 500px;
-}
-
-.carousel-item .container {
-  width: 80%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 /* Carrusel */
 .carousel-inner {
@@ -645,5 +622,13 @@ body .contactame {
     padding: 20px;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+}
+/* Media query para ajustar el tamaño del logo en Mozilla Firefox */
+@supports (-moz-appearance:none) {
+  .logo {
+    /* Estilos específicos para Mozilla Firefox */
+    width: 10em; /* Ajusta el tamaño del logo para Firefox */
+    height: auto; /* Ajusta el alto automáticamente */
   }
 }
