@@ -57,33 +57,41 @@
         <!-- Form -->
         <div class="contacto form">
             <h3>Envianos un mensaje</h3>
-            <form>
+            <form id="formulario" action="https://formsubmit.co/huellasdeesperanza@gmail.com" method="POST">
                 <div class="formBox">
                     <div class="inputBox">
                         <span>Nombre</span>
-                        <input type="text" placeholder="Ingresa tu nombre" id="" required>
+                        <input type="text" placeholder="Ingresa tu nombre" id="nombre">
+                        <div class="error-mensage" id="errorNombre"></div>
                     </div>
                     <div class="inputBox">
                         <span>Apellido</span>
-                        <input type="text" placeholder="Ingresa tu apellido" id="" required>
-                    </div>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+                        <div class="error-message" id="apellidoError"></div>
+                                </div>
                     <div class="inputBox">
                         <span>Email</span>
-                        <input type="text" placeholder="ingresatumail@tumail.com" id="">
-                    </div>
+                        <input type="email" id="email" name="email" placeholder="ingresatumail@tumail.com">
+                        <div class="error-message" id="emailError"></div>
+                                </div>
                     <div class="inputBox">
                         <span>Teléfono</span>
-                        <input type="text" placeholder="123 456 789" id=""required>
+                        <input type="text" placeholder="011 2345 6789" id="telefono" name="telefono" required>
+                        <div class="error-message" id="telefonoError"></div>
                     </div>
                     <div class="row100">
                     <div class="inputBox">
                         <span>Mensaje</span>
-                        <textarea placeholder="Ingresa tu mensaje aquí" minlength="10"></textarea>
+                        <textarea placeholder="Ingresa tu mensaje aquí" id="mensaje" name="mensaje" minlength="10"></textarea>
+                        <div class="error-message" id="mensajeError"></div>
                     </div>
 		            </div>
                     <div class="row100">
                     <div class="inputBox">
                         <input type="submit" value="Enviar">
+                        <!-- Esto usariamos para redireccionar la nuestra página nuevamente -->
+                        <!-- <input type="hidden" name="next" value="http://huellasdeesperanza.com">
+                        <input type="hidden" name="_captcha" value="false"> -->
                     </div>
                     </div>                    
                 </div>
@@ -104,7 +112,7 @@
                 </div>
                 <div>
                     <span><i class="bi bi-telephone-fill"></i></span>
-                    <a href="tel:123456789">Tel.: 123 456 789</a>
+                    <a href="tel:0123456789">Tel.: 011 2345 6789</a>
                 </div>
             </div>
             <div class="animate__animated animate__fadeInBottomRight animate__delay-0.5s">
@@ -127,6 +135,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous">
 </script>
+<script src="../Js/script.js"></script>
 </body>
 <footer class="d-flex flex-column align-items-center justify-content-center">
     <div class="icons-redes-sociales">

@@ -498,6 +498,12 @@ body .contactame {
 .inputBox ::placeholder {
   color: #333;
 }
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
 /* info */
 .info {
   background: #255735;
